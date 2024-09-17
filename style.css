@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.id {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.id h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#show-id {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(240, 85, 29);
+}
+
+.todo-link-input {
+    box-shadow: 0px 8px 10px 0px rgb(133, 130, 130);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.todo-input-field {
+    width: 80%;
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+    
+}
+
+#add-link{
+    background-color: rgb(30, 158, 218);
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+#refresh {
+    
+    background-color: rgb(30, 158, 218);
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+#refresh:hover {
+    background-color: rgb(91, 93, 94);
+}
+
+#add-link:hover {
+    background-color: rgb(24, 133, 184);
+}
+
+.todo-input-field img:hover {
+    background-color: rgb(21, 132, 184);
+    cursor: pointer;
+}
+
+.todo-input-field input {
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(237, 240, 243);
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.todo-title {
+    display: flex;
+    align-items: center;
+}
+
+.todo-title h1 {
+    padding: 15px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.todo-title a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    color: rgb(51, 50, 50);
+}
+
+.todo-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.todo-class-id-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.todo-class-id-input input {
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.todo-submit-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 15px;
+     
+}
+
+.todo-submit-actions img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.todo-submit-icon {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(238, 115, 70);
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.todo-submit-icon:hover {
+    background-color: rgb(240, 85, 29);
+}
+
+.todo-submit-actions a {
+    text-decoration: none;
+    color: rgb(115, 115, 116);
+    font-size: 16px;
+}
+
+.todo-submit-actions button:hover {
+    background-color: rgb(240, 85, 29);
+    cursor: pointer;
+}
+
+.todo-submit-actions button {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(238, 115, 70);
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-right: 15px;
+}
+
+
+
+.link-item div img {
+    cursor: pointer;
+    padding: 5px;
+    outline: none;
+}
+
+.link-item div img:hover {
+    background-color: rgb(188, 196, 196);
+}
+
+.link-item div {
+    gap: 2px;
+}
+
+.link-item {
+    display: flex;
+    width: 77.5%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgb(121, 116, 116);
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 11.3%;
+}
+#todo-links-list{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-main {   
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;    
+    background: white;      
+    width: 100%;       
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+    
+    .todo-header{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: white;
+    }
+    .todo-submit-actions{
+        display: none;
+    }
+
+    .todo-link-input{
+        width: 80%;
+    }
+    .todo-main{
+        width: 100%;
+    }
+
+    .todo-input-field{
+        display: flex;
+        width: 80%;
+
+    }
+    
+    .link-item{
+        display: flex;
+        
+    }
+}
